@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: todo-backend
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && node server.js  # Or node index.js
+    rootDir: backend
+    envVars:
+      - key: MONGO_URI
+        value: your_mongodb_atlas_uri_here
+      - key: JWT_SECRET
+        value: your_jwt_secret_key
+      - key: CLIENT_URL
+        value: https://your-frontend-url.vercel.app
