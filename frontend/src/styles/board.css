@@ -1,0 +1,169 @@
+/* board.css */
+.board {
+  display: flex;
+  padding: 2rem;
+  gap: 1rem;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.column {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 300px;
+  min-height: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.column h3 {
+  text-align: center;
+  color: #555;
+}
+
+.task-card {
+  background: white;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  cursor: grab;
+}
+
+.task-card:hover {
+  background-color: #f0f8ff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #007BFF;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.navbar button {
+  background-color: white;
+  color: #007BFF;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.board-container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.board-container h2 {
+  text-align: center;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.board-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 1.5rem;
+  background-color: #f7f8fa;
+}
+
+.column {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 300px;
+  min-height: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+  flex: 1;
+}
+
+.task-card {
+  background: white;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  cursor: grab;
+}
+
+.task-card:hover {
+  background-color: #f0f8ff;
+}
+
+.activity-log {
+  flex: 1;
+  max-width: 320px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 1200px) {
+  .board {
+    justify-content: center;
+  }
+
+  .activity-log {
+    max-width: 100%;
+  }
+}
+/* src/styles/ActivityLog.css OR src/styles/board.css */
+
+.log-panel {
+  width: 100vw; /* Full screen width */
+  background-color: #310033;
+  color: red;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  border-top: 1px solid #9c1010;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.log-panel h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.log-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.log-panel li {
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+}
+
