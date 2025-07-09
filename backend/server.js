@@ -13,7 +13,7 @@ const server = http.createServer(app);
 // ✅ Setup Socket.IO server
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "http://localhost:3001"],
+    origin: ["http://localhost:3000", "http://localhost:3001","https://to-do-board-five.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
   }
@@ -21,7 +21,7 @@ const io = new Server(server, {
 
 // ✅ Middleware
 app.use(cors({
-  origin: ["http://localhost:3000", "http://localhost:3001"],
+  origin: ["http://localhost:3000", "http://localhost:3001","https://to-do-board-five.vercel.app"],
   credentials: true
 }));
 app.use(express.json());
