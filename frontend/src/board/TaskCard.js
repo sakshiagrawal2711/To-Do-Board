@@ -1,4 +1,4 @@
-import { Draggable } from 'react-beautiful-dnd';
+import { Draggable } from '@hello-pangea/dnd';
 import { useEffect, useState } from 'react';
 import '../styles/index.css';
 import ConflictModal from '../components/ConflictModal';

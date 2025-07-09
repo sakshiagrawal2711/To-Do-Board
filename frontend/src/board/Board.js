@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { DragDropContext } from 'react-beautiful-dnd';
+import { DragDropContext } from '@hello-pangea/dnd';
 import Column from './Column';
 import API from '../api/axios';
 import socket from '../utils/socket';
