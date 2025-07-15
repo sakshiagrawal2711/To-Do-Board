@@ -26,11 +26,7 @@ A real-time collaborative To-Do board web app with user authentication, smart ta
 
 ---
 
-## 🖼️ UI Preview
-
-> _Add screenshots or a Loom demo link here later_
-
----
-
-## 📦 Folder Structure
+How To Run Code:
+Frontend:npm start
+backend:node server.js
 
